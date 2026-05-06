@@ -1,0 +1,56 @@
+import { motion } from 'motion/react';
+import { Sparkles } from 'lucide-react';
+
+export default function About() {
+  return (
+    <section id="about" className="section-padding bg-gray-50/50 dark:bg-gray-900/20">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
+          <div className="aspect-square rounded-3xl overflow-hidden glass p-4 rotate-3 hover:rotate-0 transition-transform duration-500">
+            <div className="w-full h-full rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white">
+              <Sparkles size={80} className="animate-pulse" />
+            </div>
+          </div>
+          {/* Decorative tag */}
+          <div className="absolute -bottom-6 -right-6 glass p-6 rounded-2xl shadow-xl max-w-[200px]">
+            <p className="text-sm font-bold leading-tight">
+              Based in Nusa, Indonesia 🇮🇩
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-4xl font-heading font-extrabold mb-6">
+            WHO IS <span className="text-blue-500">RAYY?</span>
+          </h2>
+          <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+            I am a student at <span className="font-bold text-[var(--text)]">NUSA Boarding School</span> who is passionate about building platforms that help people, such as school systems and POS applications.
+          </p>
+          <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
+            My goal is to create websites that are widely used and truly impactful. I believe in the <span className="italic font-medium text-blue-500">"Vibecoder mindset"</span> — combining technical excellence with soul and great user experience.
+          </p>
+          
+          <div className="grid grid-cols-2 gap-6">
+            <div>
+              <p className="text-3xl font-heading font-black text-blue-500">4+</p>
+              <p className="text-sm font-bold uppercase tracking-widest opacity-60">Finished Projects</p>
+            </div>
+            <div>
+              <p className="text-3xl font-heading font-black text-blue-500">Fullstack</p>
+              <p className="text-sm font-bold uppercase tracking-widest opacity-60">Development Focus</p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
