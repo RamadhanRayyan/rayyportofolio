@@ -1,5 +1,9 @@
 import { motion } from 'motion/react';
 import { ExternalLink, Github as GithubIcon, Layers } from 'lucide-react';
+import pipaResapanImg from '../assets/piparesapanss.png';
+import omahMadukuImg from '../assets/omahmadukuss.png';
+import poskoeImg from '../assets/poskoess.png';
+import nusaTrackImg from '../assets/nusatrackss.png';
 
 export default function Projects() {
   const projects = [
@@ -8,6 +12,7 @@ export default function Projects() {
       desc: "Company profile website for horizontal water absorption pipe solutions.",
       tech: ["React", "Vite", "TanStack", "Supabase", "PostgreSQL"],
       link: "https://piparesapanhorisontal.com",
+      image: pipaResapanImg,
       color: "from-blue-600 to-cyan-500"
     },
     {
@@ -15,6 +20,7 @@ export default function Projects() {
       desc: "Landing page offering various types of high-quality honey products.",
       tech: ["React", "Vite"],
       link: "https://omahmaduku.web.id",
+      image: omahMadukuImg,
       color: "from-amber-500 to-orange-400"
     },
     {
@@ -22,6 +28,7 @@ export default function Projects() {
       desc: "POS system for store management with real-time inventory tracking.",
       tech: ["React", "Supabase"],
       link: "https://poskoe.netlify.app",
+      image: poskoeImg,
       color: "from-emerald-600 to-teal-500"
     },
     {
@@ -29,6 +36,7 @@ export default function Projects() {
       desc: "School platform for assignments, materials, grading, and feedback.",
       tech: ["React", "Supabase", "PostgreSQL"],
       link: "https://nusatrack.netlify.app",
+      image: nusaTrackImg,
       color: "from-indigo-600 to-purple-500"
     }
   ];
@@ -51,17 +59,27 @@ export default function Projects() {
               transition={{ delay: index * 0.1 }}
               className="group relative"
             >
-              <div className={`aspect-[16/10] rounded-3xl overflow-hidden bg-gradient-to-br ${project.color} p-8 mb-6 relative group-hover:shadow-[0_20px_50px_rgba(59,130,246,0.3)] transition-all duration-500`}>
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors" />
-                <Layers className="text-white/20 absolute -bottom-10 -right-10 w-48 h-48 -rotate-12 group-hover:rotate-0 transition-transform duration-700" />
+              <div className="aspect-[16/10] rounded-3xl overflow-hidden bg-gray-100 dark:bg-gray-800 mb-6 relative group-hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)] transition-all duration-500 border border-gray-200/50 dark:border-gray-700/50">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                />
+                {/* Subtle gradient for text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
                 
-                <div className="relative h-full flex flex-col justify-between">
+                <div className="absolute inset-0 p-8 flex flex-col justify-between">
                   <div className="flex justify-between items-start">
-                    <div className="p-3 glass rounded-2xl">
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="p-3 glass rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110 hover:bg-white/20"
+                    >
                       <ExternalLink className="text-white" size={20} />
-                    </div>
+                    </a>
                   </div>
-                  <h4 className="text-3xl font-heading font-bold text-white tracking-tight">{project.title}</h4>
+                  <h4 className="text-3xl font-heading font-bold text-white tracking-tight drop-shadow-lg">{project.title}</h4>
                 </div>
               </div>
               

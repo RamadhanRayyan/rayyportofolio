@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Sparkles } from 'lucide-react';
+import myPhoto from '../assets/fotoku.JPG';
 
 export default function About() {
   return (
@@ -12,8 +13,12 @@ export default function About() {
           className="relative"
         >
           <div className="aspect-square rounded-3xl overflow-hidden glass p-4 rotate-3 hover:rotate-0 transition-transform duration-500">
-            <div className="w-full h-full rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white">
-              <Sparkles size={80} className="animate-pulse" />
+            <div className="w-full h-full rounded-2xl overflow-hidden bg-gradient-to-br from-blue-500 to-cyan-500">
+              <img 
+                src={myPhoto} 
+                alt="Muhammad Ramadhan Rayyan" 
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-110 hover:scale-100"
+              />
             </div>
           </div>
           {/* Decorative tag */}
@@ -41,7 +46,7 @@ export default function About() {
           
           <div className="grid grid-cols-2 gap-6">
             <div>
-              <p className="text-3xl font-heading font-black text-blue-500">4+</p>
+              <p className="text-3xl font-heading font-black text-blue-500">15+</p>
               <p className="text-sm font-bold uppercase tracking-widest opacity-60">Finished Projects</p>
             </div>
             <div>
