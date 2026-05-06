@@ -3,10 +3,10 @@ import { ArrowRight, Download } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background blobs for futuristic vibe */}
-      <div className="absolute top-1/4 -left-20 w-80 h-80 bg-blue-500/20 rounded-full blur-[100px] -z-10 animate-pulse" />
-      <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-[100px] -z-10 animate-pulse delay-1000" />
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 bg-white dark:bg-transparent">
+      {/* Background blobs - more subtle in light mode */}
+      <div className="absolute top-1/4 -left-20 w-80 h-80 bg-blue-400/10 dark:bg-blue-500/20 rounded-full blur-[120px] -z-10 animate-pulse" />
+      <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-indigo-400/5 dark:bg-cyan-500/10 rounded-full blur-[120px] -z-10 animate-pulse delay-1000" />
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
         <motion.div
@@ -24,7 +24,7 @@ export default function Hero() {
             RAYYAN
           </h1>
           
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-10 font-medium">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-10 font-medium">
             Fullstack Vibe Developer <span className="text-blue-500 mx-2">/</span> From idea <ArrowRight className="inline mx-1 text-blue-500" size={18} /> real website
           </p>
           

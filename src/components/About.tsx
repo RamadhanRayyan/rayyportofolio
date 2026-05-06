@@ -4,7 +4,7 @@ import myPhoto from '../assets/fotoku.JPG';
 
 export default function About() {
   return (
-    <section id="about" className="section-padding bg-gray-50/50 dark:bg-gray-900/20">
+    <section id="about" className="section-padding bg-white dark:bg-transparent">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -37,11 +37,11 @@ export default function About() {
           <h2 className="text-4xl font-heading font-extrabold mb-6">
             WHO IS <span className="text-blue-500">RAYY?</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-            I am a student at <span className="font-bold text-[var(--text)]">NUSA Boarding School</span> who is passionate about building platforms that help people, such as school systems and POS applications.
+          <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
+            I am a student at <span className="font-bold text-blue-600 dark:text-blue-400">NUSA Boarding School</span> who is passionate about building platforms that help people, such as school systems and POS applications.
           </p>
-          <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-            My goal is to create websites that are widely used and truly impactful. I believe in the <span className="italic font-medium text-blue-500">"Vibecoder mindset"</span> — combining technical excellence with soul and great user experience.
+          <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed mb-8">
+            My goal is to create websites that are widely used and truly impactful. I believe in the <span className="italic font-semibold text-blue-500">"Vibecoder mindset"</span> — combining technical excellence with soul and great user experience.
           </p>
           
           <div className="grid grid-cols-2 gap-6">

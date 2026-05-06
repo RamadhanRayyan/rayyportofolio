@@ -56,21 +56,21 @@ export default function Contact() {
               Have an idea or a project in mind? I'm always open to discussing new opportunities and collaborations.
             </p>
             
-            <div className="space-y-6">
+            <div className="grid grid-cols-2 lg:grid-cols-1 gap-4">
               {socialLinks.map((link) => (
                 <a 
                   key={link.name} 
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-6 group"
+                  className="flex items-center gap-3 md:gap-6 group glass p-4 rounded-2xl lg:bg-transparent lg:border-none lg:p-0"
                 >
-                  <div className="w-14 h-14 rounded-2xl glass flex items-center justify-center group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+                  <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl glass flex items-center justify-center group-hover:bg-blue-500 group-hover:text-white transition-all duration-300 flex-shrink-0">
                     {link.icon}
                   </div>
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-widest opacity-50 mb-1">{link.name}</p>
-                    <p className="text-lg font-bold group-hover:text-blue-500 transition-colors">{link.value}</p>
+                  <div className="min-w-0">
+                    <p className="text-[8px] md:text-xs font-bold uppercase tracking-widest opacity-50 mb-0.5 md:mb-1">{link.name}</p>
+                    <p className="text-[10px] md:text-lg font-bold group-hover:text-blue-500 transition-colors truncate">{link.value}</p>
                   </div>
                 </a>
               ))}
