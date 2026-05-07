@@ -38,10 +38,10 @@ export default function About() {
             WHO IS <span className="text-blue-500">RAYY?</span>
           </h2>
           <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
-            I am a student at <span className="font-bold text-blue-600 dark:text-blue-400">NUSA Boarding School</span> who is passionate about building platforms that help people, such as school systems and POS applications.
+            I am a student at <span className="font-bold text-blue-600 dark:text-blue-400">SMK Negeri 8 Semarang</span> (Software Engineering) and a <span className="font-bold text-blue-600 dark:text-blue-400">Dicoding IDCamp 2024</span> graduate.
           </p>
           <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed mb-8">
-            My goal is to create websites that are widely used and truly impactful. I believe in the <span className="italic font-semibold text-blue-500">"Vibecoder mindset"</span> — combining technical excellence with soul and great user experience.
+            My goal is to create impactful digital solutions. I believe in the <span className="italic font-semibold text-blue-500">"Vibecoder mindset"</span> — combining technical excellence with creative soul and high-performance user experience.
           </p>
           
           <div className="grid grid-cols-2 gap-6">

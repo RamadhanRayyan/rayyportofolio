@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, ExternalLink } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -28,7 +28,7 @@ export default function Hero() {
             Fullstack Vibe Developer <span className="text-blue-500 mx-2">/</span> From idea <ArrowRight className="inline mx-1 text-blue-500" size={18} /> real website
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.a
               href="#projects"
               whileHover={{ scale: 1.05 }}
@@ -37,13 +37,28 @@ export default function Hero() {
             >
               View My Work
             </motion.a>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 glass rounded-2xl font-bold flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all border-none"
-            >
-              Download CV <Download size={18} className="text-blue-500" />
-            </motion.button>
+            <div className="flex items-center gap-2">
+              <motion.a
+                href="/CV.pdf"
+                download="CV_Muhammad_Ramadhan_Rayyan.pdf"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-6 py-4 glass rounded-2xl font-bold flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all border-none text-sm"
+              >
+                Download CV <Download size={18} className="text-blue-500" />
+              </motion.a>
+              <motion.a
+                href="https://docs.google.com/document/d/1CmzkU5RjViOxacAZff8J_el-PySDDJTuwOG6wr67phs/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="p-4 glass rounded-2xl font-bold flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-all border-none"
+                title="View CV Online"
+              >
+                <ExternalLink size={18} className="text-blue-500" />
+              </motion.a>
+            </div>
           </div>
         </motion.div>
       </div>

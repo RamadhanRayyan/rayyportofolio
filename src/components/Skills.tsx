@@ -6,22 +6,22 @@ export default function Skills() {
     {
       title: "Languages",
       icon: <Code2 className="text-blue-500" />,
-      skills: ["JavaScript", "HTML", "CSS", "C++"]
+      skills: ["JavaScript", "TypeScript", "HTML", "CSS"]
     },
     {
       title: "Frameworks",
       icon: <Layout className="text-cyan-500" />,
-      skills: ["React", "Next.js", "Vite", "Hono", "TanStack"]
+      skills: ["React", "Next.js", "Node.js", "Express.js", "Tailwind CSS"]
     },
     {
       title: "Tools & Backend",
       icon: <Database className="text-indigo-500" />,
-      skills: ["Git", "Supabase", "Netlify", "PostgreSQL"]
+      skills: ["Git", "GitHub", "Supabase", "PostgreSQL", "Vercel"]
     },
     {
       title: "Specialty",
       icon: <Terminal className="text-emerald-500" />,
-      skills: ["Vibecoder Mindset", "Fullstack Architecture", "Responsive Design"]
+      skills: ["Fullstack Dev", "UI/UX Principles", "AI Integration", "Web Performance"]
     }
   ];
 
