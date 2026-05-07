@@ -10,7 +10,7 @@ export default function Projects() {
     {
       title: "Piparesapan Horisontal",
       desc: "Company profile website for horizontal water absorption pipe solutions.",
-      tech: ["React", "Vite", "TanStack", "Supabase", "PostgreSQL"],
+      tech: ["React", "Vite", "Supabase", "PostgreSQL"],
       link: "https://piparesapanhorisontal.com",
       image: pipaResapanImg,
       color: "from-blue-600 to-cyan-500"
@@ -18,7 +18,7 @@ export default function Projects() {
     {
       title: "Omahmaduku",
       desc: "Landing page offering various types of high-quality honey products.",
-      tech: ["React", "Vite"],
+      tech: ["React", "Vite", "Supabase", "PostgreSQL"],
       link: "https://omahmaduku.web.id",
       image: omahMadukuImg,
       color: "from-amber-500 to-orange-400"
@@ -26,7 +26,7 @@ export default function Projects() {
     {
       title: "Toko Amanah",
       desc: "POS system for store management with real-time inventory tracking.",
-      tech: ["React", "Supabase"],
+      tech: ["React", "Vite", "Supabase", "PostgreSQL", "Tanstack"],
       link: "https://poskoe.netlify.app",
       image: poskoeImg,
       color: "from-emerald-600 to-teal-500"
@@ -34,7 +34,7 @@ export default function Projects() {
     {
       title: "Nusa Track",
       desc: "School platform for assignments, materials, grading, and feedback.",
-      tech: ["React", "Supabase", "PostgreSQL"],
+      tech: ["React", "Vite", "Supabase", "PostgreSQL", "Tanstack"],
       link: "https://nusatrack.netlify.app",
       image: nusaTrackImg,
       color: "from-indigo-600 to-purple-500"
