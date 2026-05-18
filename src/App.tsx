@@ -31,7 +31,7 @@ export default function App() {
             key="loader"
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-100 flex items-center justify-center bg-white dark:bg-[#020617]"
+            className="fixed inset-0 z-100 flex items-center justify-center bg-[var(--bg)] dark:bg-[#020617]"
           >
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}

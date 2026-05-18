@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Mail, Github, Instagram, Linkedin, Send, CheckCircle2, AlertCircle } from 'lucide-react';
-import { useState } from 'react';
+import { type FormEvent, useState } from 'react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -17,7 +17,7 @@ export default function Contact() {
     { name: 'LinkedIn', icon: <Linkedin />, href: 'https://www.linkedin.com/in/muhammad-ramadhan-rayyan', value: 'Muhammad Ramadhan Rayyan' },
   ];
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setStatus('sending');
 
@@ -52,7 +52,7 @@ export default function Contact() {
               LET'S BUILD <br />
               SOMETHING <span className="text-gradient">AWESOME</span>
             </h3>
-            <p className="text-xl text-gray-500 dark:text-gray-400 mb-12 max-w-lg font-medium">
+            <p className="text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-lg font-medium">
               Have an idea or a project in mind? I'm always open to discussing new opportunities and collaborations.
             </p>
             
@@ -110,7 +110,7 @@ export default function Contact() {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      className="w-full bg-gray-50 dark:bg-gray-900 border-none rounded-xl px-4 py-4 font-medium focus:ring-2 focus:ring-blue-500 transition-shadow outline-none" 
+                      className="w-full bg-white/80 dark:bg-gray-900 border border-blue-100/80 dark:border-white/5 rounded-xl px-4 py-4 font-medium focus:ring-2 focus:ring-blue-500 transition-shadow outline-none" 
                       placeholder="Rayy" 
                     />
                   </div>
@@ -121,7 +121,7 @@ export default function Contact() {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full bg-gray-50 dark:bg-gray-900 border-none rounded-xl px-4 py-4 font-medium focus:ring-2 focus:ring-blue-500 transition-shadow outline-none" 
+                      className="w-full bg-white/80 dark:bg-gray-900 border border-blue-100/80 dark:border-white/5 rounded-xl px-4 py-4 font-medium focus:ring-2 focus:ring-blue-500 transition-shadow outline-none" 
                       placeholder="rayy@vibes.com" 
                     />
                   </div>
@@ -131,7 +131,7 @@ export default function Contact() {
                       required
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
-                      className="w-full bg-gray-50 dark:bg-gray-900 border-none rounded-xl px-4 py-4 font-medium focus:ring-2 focus:ring-blue-500 transition-shadow outline-none h-32 resize-none" 
+                      className="w-full bg-white/80 dark:bg-gray-900 border border-blue-100/80 dark:border-white/5 rounded-xl px-4 py-4 font-medium focus:ring-2 focus:ring-blue-500 transition-shadow outline-none h-32 resize-none" 
                       placeholder="Let's vibe on a new project!" 
                     />
                   </div>

@@ -33,7 +33,7 @@ export default function Skills() {
             <h2 className="text-sm font-bold uppercase tracking-[0.4em] text-blue-500 mb-4">Technical Prowess</h2>
             <h3 className="text-4xl md:text-5xl font-heading font-extrabold tracking-tight">MY TECH <span className="text-gradient">STACK</span></h3>
           </div>
-          <p className="max-w-xs text-gray-500 dark:text-gray-400 font-medium">
+          <p className="max-w-xs text-slate-600 dark:text-slate-400 font-medium">
             Building scalable digital solutions with a focus on modern, efficient architecture.
           </p>
         </div>

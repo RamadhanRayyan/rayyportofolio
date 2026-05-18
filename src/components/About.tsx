@@ -4,7 +4,7 @@ import myPhoto from '../assets/fotoku.JPG';
 
 export default function About() {
   return (
-    <section id="about" className="section-padding bg-white dark:bg-transparent">
+    <section id="about" className="section-padding section-surface">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -24,7 +24,7 @@ export default function About() {
           {/* Decorative tag */}
           <div className="absolute -bottom-6 -right-6 glass p-6 rounded-2xl shadow-xl max-w-[200px]">
             <p className="text-sm font-bold leading-tight">
-              Based in Nusa, Indonesia 🇮🇩
+              Based in Indonesia, Semarang
             </p>
           </div>
         </motion.div>
@@ -38,7 +38,7 @@ export default function About() {
             WHO IS <span className="text-blue-500">RAYY?</span>
           </h2>
           <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
-            I am a student at <span className="font-bold text-blue-600 dark:text-blue-400">SMK Negeri 8 Semarang</span> (Software Engineering) and a <span className="font-bold text-blue-600 dark:text-blue-400">Dicoding IDCamp 2024</span> graduate.
+            I am a student at <span className="font-bold text-blue-600 dark:text-blue-400">NUSA Boarding School</span> (Software Engineering).
           </p>
           <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed mb-8">
             My goal is to create impactful digital solutions. I believe in the <span className="italic font-semibold text-blue-500">"Vibecoder mindset"</span> — combining technical excellence with creative soul and high-performance user experience.

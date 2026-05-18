@@ -3,7 +3,7 @@ import { ArrowRight, Download, ExternalLink } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 bg-white dark:bg-transparent">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 section-surface">
       {/* Background blobs - more subtle in light mode */}
       <div className="absolute top-1/4 -left-20 w-80 h-80 bg-blue-400/10 dark:bg-blue-500/20 rounded-full blur-[120px] -z-10 animate-pulse" />
       <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-indigo-400/5 dark:bg-cyan-500/10 rounded-full blur-[120px] -z-10 animate-pulse delay-1000" />
@@ -43,7 +43,7 @@ export default function Hero() {
                 download="CV_Muhammad_Ramadhan_Rayyan.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-4 glass rounded-2xl font-bold flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all border-none text-sm"
+                className="px-6 py-4 glass rounded-2xl font-bold flex items-center gap-2 hover:bg-blue-50 dark:hover:bg-gray-800 transition-all border-none text-sm"
               >
                 Download CV <Download size={18} className="text-blue-500" />
               </motion.a>
@@ -53,7 +53,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-4 glass rounded-2xl font-bold flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-all border-none"
+                className="p-4 glass rounded-2xl font-bold flex items-center justify-center hover:bg-blue-50 dark:hover:bg-gray-800 transition-all border-none"
                 title="View CV Online"
               >
                 <ExternalLink size={18} className="text-blue-500" />

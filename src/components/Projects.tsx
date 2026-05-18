@@ -27,7 +27,7 @@ export default function Projects() {
       title: "Toko Amanah",
       desc: "POS system for store management with real-time inventory tracking.",
       tech: ["React", "Vite", "Supabase", "PostgreSQL", "Tanstack"],
-      link: "https://poskoe.netlify.app",
+      link: "https://github.com/RamadhanRayyan/kasircofana.git",
       image: poskoeImg,
       color: "from-emerald-600 to-teal-500"
     },
@@ -35,14 +35,14 @@ export default function Projects() {
       title: "Nusa Track",
       desc: "School platform for assignments, materials, grading, and feedback.",
       tech: ["React", "Vite", "Supabase", "PostgreSQL", "Tanstack"],
-      link: "https://nusatrack.netlify.app",
+      link: "https://github.com/RamadhanRayyan/NUSABS.git",
       image: nusaTrackImg,
       color: "from-indigo-600 to-purple-500"
     }
   ];
 
   return (
-    <section id="projects" className="section-padding bg-white dark:bg-transparent">
+    <section id="projects" className="section-padding section-surface">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <h2 className="text-sm font-bold uppercase tracking-[0.4em] text-blue-500 mb-4">Selected Works</h2>
@@ -84,7 +84,7 @@ export default function Projects() {
               </div>
               
               <div className="px-1 md:px-4">
-                <p className="text-xs md:text-base text-gray-500 dark:text-gray-400 mb-3 md:mb-4 font-medium line-clamp-2">
+                <p className="text-xs md:text-base text-slate-600 dark:text-slate-400 mb-3 md:mb-4 font-medium line-clamp-2">
                   {project.desc}
                 </p>
                 <div className="flex flex-wrap gap-1 md:gap-2 mb-4 md:mb-6">
