@@ -11,7 +11,7 @@ export default function Skills() {
     {
       title: "Frameworks",
       icon: <Layout className="text-cyan-500" />,
-      skills: ["React", "Next.js", "Node.js", "Express.js", "Tailwind CSS"]
+      skills: ["React", "Next.js", "Node.js", "Tanstack", "Tailwind CSS"]
     },
     {
       title: "Tools & Backend",
